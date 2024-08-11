@@ -27,3 +27,17 @@ minetest.register_biome({
         },
     }
 })
+
+minetest.register_decoration({
+    name = "tranquil_lands:grass",
+    deco_type = "simple",
+    place_on = {"tranquil_lands:moonstone_with_grass"},
+    sidelen = 16,
+    fill_ratio = 0.08,
+    biomes = {"floatlands"},
+    y_max = ymax,
+    y_min = ymin,
+    param2 = 1,
+    param2_max = 255,
+    decoration = "tranquil_lands:grass"
+})
