@@ -44,7 +44,7 @@ local function tree_nodes(name)
         connects_to = {"group:fence", "group:wood_related"},
         tiles = {"tl_" .. name .. "_planks.png"},
         sounds = fl_trees.sounds.wood(),
-        groups = {dig_tree = 2, wood_related = 1, plank = 1},
+        groups = {dig_tree = 2, wood_related = 1, plank = 1, not_in_creative_inventory = 1},
     })
 
     --crafts
