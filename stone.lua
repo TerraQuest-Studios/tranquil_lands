@@ -76,5 +76,5 @@ minetest.register_node("tranquil_lands:grass", {
         fixed = {-0.5,-0.5,-0.5,0.5,-0.45,0.5},
     },
     walkable = false,
-    groups = {dig_generic = 4, plant = 1},
+    groups = {dig_generic = 4, plant = 1, attached_node=1},
 })
