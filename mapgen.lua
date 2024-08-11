@@ -41,3 +41,33 @@ minetest.register_decoration({
     param2_max = 255,
     decoration = "tranquil_lands:grass"
 })
+
+minetest.register_decoration({
+    name = "tranquil_lands:juniper_tree",
+    deco_type = "schematic",
+    place_on = "tranquil_lands:moonstone_with_grass",
+    sidelen = 16,
+    fill_ratio = 0.001,
+    biomes = {"floatlands"},
+    y_max = ymax,
+    y_min = ymin,
+    place_offset_y = 1,
+    schematic = minetest.get_modpath("tranquil_lands") .. "/schems/tl_juniper_tree.mts",
+    flags = "place_center_x, place_center_z",
+    rotation = "random",
+})
+
+minetest.register_decoration({
+    name = "tranquil_lands:birch_tree",
+    deco_type = "schematic",
+    place_on = "tranquil_lands:moonstone_with_grass",
+    sidelen = 16,
+    fill_ratio = 0.005,
+    biomes = {"floatlands"},
+    y_max = ymax,
+    y_min = ymin,
+    place_offset_y = 1,
+    schematic = minetest.get_modpath("tranquil_lands") .. "/schems/tl_birch_tree.mts",
+    flags = "place_center_x, place_center_z",
+    rotation = "random",
+})
